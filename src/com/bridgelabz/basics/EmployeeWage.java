@@ -10,6 +10,7 @@ public class EmployeeWage {
 		int wageperHr=20;
 		int FullDayHr=8;
 		int HalfDayHr=4;
+		int DayPerMonth=20;
 		int empcheck = (int)Math.floor(Math.random()*10)%2;
 		if(empcheck==is_Full_Time) {
 			System.out.println("Employee Present ");
@@ -21,10 +22,10 @@ public class EmployeeWage {
 		int mycheck=(int) empcheck;
 		switch(mycheck) {
 		case 0:
-			System.out.println("Employee is Absent !!");
+			System.out.println("Employee Monthly Half_Day Wage is="+(wageperHr*HalfDayHr)*DayPerMonth);
 			break;
 		case 1:
-			System.out.println("Employee is Present !!");
+			System.out.println("Employee Monthly Full Day Wage is="+(wageperHr*FullDayHr)*DayPerMonth);
 			break;
 		}
 	}
