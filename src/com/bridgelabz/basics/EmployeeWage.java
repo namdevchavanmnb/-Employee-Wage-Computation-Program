@@ -18,5 +18,14 @@ public class EmployeeWage {
 		else {		
 			System.out.println("Employee Daily Half_Day Wage is="+(wageperHr*HalfDayHr));
 		}
+		int mycheck=(int) empcheck;
+		switch(mycheck) {
+		case 0:
+			System.out.println("Employee is Absent !!");
+			break;
+		case 1:
+			System.out.println("Employee is Present !!");
+			break;
+		}
 	}
 }
